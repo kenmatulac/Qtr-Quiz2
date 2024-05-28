@@ -1,91 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<style>
-		img {
-			width: 100%;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: lightcoral;
+            padding: 20px 0;
+        }
+
+        footer {
+            background-color: lightcoral;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        #q1Page {
+            font-family: 'Times New Roman';
+            padding: 50px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border: 2px solid blue;
+        }
+        
+        #q2Page {
+            font-family: Arial;
+            background-image: url(https://kenmatulac.github.io/ICT9Emerald_Q2Project_KENNETH_MATULAC/project_background.png);
+            background-size: cover;
+            padding: 50px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border: 2px solid blue;
+        }
+        #q2Page table {
+            width: 100%;
+            border-spacing: 50px;
+        }
+        #q2Page td {
+            background-color: wheat;
+            padding: 10px;
+            width: 33%;
+        }
+        #q2Page .size{
+            width: 300px;
+            height: 200px;
+        }
+        #q2Page .size{
+            width: 300px;
+            height: 200px;
+        }
+        
+        #q3Page {
+            font-family: 'Times New Roman';
+            padding: 50px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border: 2px solid blue;
+        }
+    </style>
 </head>
-<body>
 
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
-      <div class="container-fluid">
-        <img src="1709516916-368.png" height="70">
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-              <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
-        <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link 1</a></li>
-              <li><a class="dropdown-item" href="#">Link 2</a></li>
-             <li><a class="dropdown-item" href="#">Link 3</a></li>
-        </ul>
-  </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-warning" type="button">Search</button>
-          </form>
+<main>
+        <div id="loginPage" class="container">
+            <h2>Log In</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" value="matulac.kl@obmontessori.edu.ph" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" value="Password" name="password">
+                </div>
+                <button type="button" class="btn btn-primary" id="loginBtn">Log In</button>
+            </form>
         </div>
-      </div>
-    </nav>
 
-	<p style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzmQNHB0g1KR0OeeldV5qltnbfIQ8Qyh4QA&usqp=CAU);">
+        <div id="mainPage" class="container" style="display: none;">
+            <h1>Welcome to My Online Portfolio</h1>
+            <p>you can view my previous from quaters 1, 2, and 3</p>
+            <div id="firstQuarter">
+                <h2>First Quarter Projects</h2>
+                <button class="btn btn-primary" id="viewQ1Btn">View Quarter 1 Project</button>
+            </div>
+            <div id="secondQuarter">
+                <h2>Second Quarter Projects</h2>
+                <button class="btn btn-primary" id="viewQ2Btn">View Quarter 2 Project</button>
+            </div>
+            <div id="secondQuarter">
+                <h2>Third Quarter Projects</h2>
+                <button class="btn btn-primary" id="viewQ3Btn">View Quarter 3 Project</button>
+            </div>
+        </div>
 
+<div class="d-flex flex-column">
+            <div id="q1Page" style="display: none;">
+                <center>
+                    <h1><strong>CHARACTERS OF NOLI ME TANGERE</strong></h1>
+                    <table border="2" cellpadding="9" cellspacing="2">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="./Matulac-1stQtr_files/padre_damaso_by_xtiene-d3881bp.png" width="100" height="100">
+                                </td>
+                                <td>PADRE DAMASO</td>
+                                <td>
+                                    <li>Si Padre damaso ay isang masungit na pari na galit sa mga pilipino.</li>
+                                    <li>Inaabuso nya ang kanyang kapangyarihan bilang pari at pinaparusahan niya ang mga taong hindi sumusunod sa simbahan.</li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./Matulac-1stQtr_files/images" width="100" height="100">
+                                </td>
+                                <td>CRISOSTOMO IBARRA</td>
+                                <td>
+                                    <li>Si Crisostomo Ibarra ay isang bisita galing Espanya.</li>
+                                    <li>Siya ay mabait, matalino at isang ambisyosong lalaki.</li>
+                                </td>
+                            </tr>
 
-	<table class="table table-bordered table-striped table-hover container">
-		<tr>
-			<th class="table-primary">Movie Poster</th>
-			<th class="table-primary">Synopsis</th>
-			<th class="table-primary">Cast and Directors</th> 
-			<th class="table-primary">Movie Review</th>
-			<th class="table-primary">My Rating</th>
-		</tr>
-		<tr>
-			<td><img src="https://m.media-amazon.com/images/M/MV5BMTMzODU0NTkxMF5BMl5BanBnXkFtZTcwMjQ4MzMzMw@@._V1_FMjpg_UX1000_.jpg" alt="Remy" width="900" height="100"></td>
-			<td>Remy dreams of becoming a great chef, despite being a rat in a definitely rodent-phobic profession. He moves to Paris to follow his dream, and with the help of hapless garbage boy Linguini he puts his culinary skills to the test in the kitchen but he has to stay in hiding at the same time, with hilarious consequences. Remy eventually gets the chance to prove his culinary abilities to a great food critic but is the food good? A Pixar animation.</td>
-			<td>Cast/Voice Overs:
-			Will Arnett, Patton Oswalt, Peter O'Toole, Lou Romano, Peter Sohn
+<tr>
+                                <td>
+                                    <img src="./Matulac-1stQtr_files/latest" width="100" height="100">
+                                </td>
+                                <td>KAPITAN TIAGO</td>
+                                <td>
+                                    <li>Si kapitan tiago ay isang pandak at mayaman na lalaki.</li>
+                                    <li>Siya ay matulungin at mabait na ama.</li>
+                                    <li>Si kapitan tiago ay isang mahusay na negosyante</li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./Matulac-1stQtr_files/images(1)" width="100" height="100">
+                                </td>
+                                <td>MARIA CLARA</td>
+                                <td>
+                                    <li>Si Maria Clara ay isang mahinahon at pang-imbak na babae.</li>
+                                    <li>Siya ay anak ni Padre Damaso</li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./Matulac-1stQtr_files/uNqU-_Tk_400x400.jpg" width="100" height="100">
+                                </td>
+                                <td>PILOSOPO TASIO</td>
+                                <td>
+                                    <li>Si Pilosopo Tasio ay isang matanda na pinagkakamalang baliw o may sakit sa utak.</li>
+                                    <li>Ang totoo, si Pilosopo Tasio ay isang matalino na lalaki at madaming naranasan sa buhay</li>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
 
-			Director:
-			Brad Bird
-			</td>
-			<td>Anonymous: I Watched This Movie I Loved This Movie. in Fact I Didn't Like This Movie As A Kid Because It Was Totally Lost To Me, But Now I Find It Interesting, It's Just A Story Of A Rat And A Human Finding Their Dreams.
-			</td>
-			<td>5/5 ⭐️</td>
-		</tr>
-		<tr>
-			<td><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg" alt="https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg" width="900" height="100"></td>
-			<td>Carl Fredricksen, a 78-year-old balloon salesman, is about to fulfill a lifelong dream. Tying thousands of balloons to his house, he flies away to the South American wilderness. But curmudgeonly Carl's worst nightmare comes true when he discovers a little boy named Russell is a stowaway aboard the balloon-powered house. A Pixar animation.</td>
-			<td>Cast/Voice Overs:
-			Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson
+<div id="q2Page" style="display: none;">
+                <center>
+                    <h1>Explore the Philippines</h1>
+                    <p>The Philippines is very unique place for its nature and paradise vibe.</p>
+                </center>
+                <table>
+                    <tr>
+                        <td>
+                            <center>
+                                <img src="https://kenmatulac.github.io/ICT9Emerald_Q2Project_KENNETH_MATULAC/EK.png" class="size">
+                            </center>
+                            <h1>Enchanted kingdom</h1>
+                            <p>Enchanted kingdom is a theme park that is rated for being one of the most fun places in the Philippines. This is a very joyful place to see Family and friends spend quality time together.</p>
+                        </td>
+                        <td>
+                            <center>
+                                <img src="https://kenmatulac.github.io/ICT9Emerald_Q2Project_KENNETH_MATULAC/AMANPULO.png" class="size">
+                            </center>
+                            <h1>Amanpulo</h1>
+                            <p>Amanpulo is a romantic and also a very Family friendly location in the Philippines. It is a luxurious beach suitable for everyone.</p>
+                        </td>
+                        <td>
+                            <center>
+                                <img src="https://kenmatulac.github.io/ICT9Emerald_Q2Project_KENNETH_MATULAC/SUBIC.png" class="size">
+                            </center>
+                            <h1>Subic Beach</h1>
+                            <p>Subic beach is very known for their floating playground and their island hopping. A lot of people go here whether its for tanning, taking a break, or spending time with love ones.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-			Director:
-		Bob Peterson</td>
-			<td>Anonymous: This is one of my favourite animations of all time. It's so mature and deep that you can't find any one like this.</td>
-			<td>4.9/5 ⭐️</td>
- 		</tr>
-		<tr>
-			<td><img src="https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="https://m.media-amazon.com/images/M/MV5BOGZhM2FhNTItODAzNi00YjA0LWEyN2UtNjJlYWQzYzU1MDg5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" width="900" height="100"></td>
-			<td>Once upon a time, in a far away swamp, there lived an ogre named Shrek (Mike Myers) whose precious solitude is suddenly shattered by an invasion of annoying fairy tale characters. They were all banished from their kingdom by the evil Lord Farquaad (John Lithgow). Determined to save their home -- not to mention his -- Shrek cuts a deal with Farquaad and sets out to rescue Princess Fiona (Cameron Diaz) to be Farquaad's bride. Rescuing the Princess may be small compared to her deep, dark secret.</td>
-			<td>Cast/Voice Overs: 
-			Mike Myers, Eddie Murphy, John Lithgow
+<div id="q3Page" style="display: none;">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+                    <div class="container-fluid">
+                    <img class="rounded-circle" src="https://storage.googleapis.com/oa_disk001/obgreenhills/65/documents/class-2438/folder-10186/1709516916-368.png" width="70" height="70">
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+                    <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-warning" type="button">Search</button>
+                        </form>
+                    </div>
+                    </div>
+                </nav>
 
-			Director: 
-			Andrew Adamson</td>
-			<td>Anonymous: Shrek isn't just a movie; it's a work of art that has revolutionized the world of animated filmmaking. From its clever humor to its heartwarming themes, this film stands as a shining example of what animated storytelling can achieve.</td>
-			<td>4.9/5 ⭐️</td>
+<p style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzmQNHB0g1KR0OeeldV5qltnbfIQ8Qyh4QA&amp;usqp=CAU);">
+            
+                    </p><h2>Dr. Dolores Ramirez</h2>
+            
+                <table class="table table-bordered table-striped table-hover container">
+                    <tbody><tr>
+                        <th class="table-primary">Movie Poster</th>
+                        <th class="table-primary">Synopsis</th>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><p>Dolores A. Ramirez is a Filipino geneticist. She specializes in plant breeding and plant cytogenetics. She was named a National Scientist of the Philippines in 1998.</p><p>She attended the University of the Philippines Los BaÃ±os, earning a bachelor of science in agriculture, magna cum laude, in 1956. Her thesis, under Dioscoro L. Umali, concerned the nature of lodging in rice. She received a Rockefeller Foundation scholarship and attended the University of Minnesota in the United States. She studied under cytogeneticist Charles Burnham and earned her MSc in cytogenetics in 1958. She continued on to Purdue University, studying under geneticist Mark L. Tomes. She received her PhD in biochemical genetics in 1963, minoring in plant pathology and plant physiology.</p>
+                            <img src="https://mb.com.ph/media/cruzlj_0a5df966e1/cruzlj_0a5df966e1.jpeg" alt="" width="400" height="300">
+                        </td>
+                        <td>
+                            <img src="https://shop.vogue.ph/cdn/shop/files/August.jpg?v=1690775916" alt="" width="400" height="300">
+                            <img src="https://b3504934.smushcdn.com/3504934/wp-content/uploads/2023/07/Dolores-Ramirez-1600-in-art.jpg?lossy=2&amp;strip=1&amp;webp=1" alt="" width="400" height="300">
+                        </td>
+                    </tr>
+                </tbody></table>
 
-		</tr>
-	</table>
+</div>
+            
+            <button class="mt-4 mx-auto btn btn-primary" id="back" style="display: none;">Back to main page</button>
+        </div>
+    </main>
 
+    <footer>
+        <div class="container">
+            <p>S.Y.2023-2024</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+function login() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email === "matulac.kl@obmontessori.edu.ph" && password === "Password") {
+                document.getElementById("loginPage").style.display = "none";
+                document.getElementById("mainPage").style.display = "block";
+            } else {
+                alert("Invalid email or password");
+            }
+        }
+
+        function viewQ1Project() {
+            document.getElementById("q1Page").style.display = "block";
+            document.getElementById("back").style.display = "block";
+            document.getElementById("mainPage").style.display = "none";
+        }
+        
+        function viewQ2Project() {
+            document.getElementById("q2Page").style.display = "block";
+            document.getElementById("back").style.display = "block";
+            document.getElementById("mainPage").style.display = "none";
+        }
+        
+        function viewQ3Project() {
+            document.getElementById("q3Page").style.display = "block";
+            document.getElementById("back").style.display = "block";
+            document.getElementById("mainPage").style.display = "none";
+        }
+        
+        function back() {
+            document.getElementById("mainPage").style.display = "block";
+            document.getElementById("back").style.display = "none";
+            document.getElementById("q1Page").style.display = "none";
+            document.getElementById("q2Page").style.display = "none";
+            document.getElementById("q3Page").style.display = "none";
+        }
+
+document.getElementById("loginBtn").addEventListener("click", login);
+        document.getElementById("viewQ1Btn").addEventListener("click", viewQ1Project);
+        document.getElementById("viewQ2Btn").addEventListener("click", viewQ2Project);
+        document.getElementById("viewQ3Btn").addEventListener("click", viewQ3Project);
+        document.getElementById("back").addEventListener("click", back);
+        </script>
 </body>
 </html>
